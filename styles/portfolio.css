@@ -46,6 +46,7 @@ font-family: "Work Sans", serif; */
     background-image: url(/images/developer.png),url(/images/header_bg.png);
     background-repeat: no-repeat;
     background-position: center left,bottom right;
+    /* margin-bottom: 124px; */
 
 }
 
@@ -220,4 +221,45 @@ footer input[type="text"],footer input[type="email"],footer textarea{
     justify-content: start;
     gap: 20px;
 
+}
+
+/* Responsive media query */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+    .skills-container,.resume-container,footer,.about-items,.banner,.nav,.nav>ul{
+        flex-direction: column;
+    }
+    
+    footer,.about,.resume-container{
+        padding: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .footer-column,.banner-profile-picture{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"],footer textarea{
+        width: calc(100% - 40px);
+    }
+    .header{
+        background-image: none;
+    }
+
+    .nav > ul {
+        gap: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner-title {
+        font-size: 55px;
+    }
+
+
+
+    
 }
